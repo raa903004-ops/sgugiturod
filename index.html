@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Подбор автомобиля по твоим задачам и вкусу.">
+<title>AutoChoice — Найди свою машину</title>
+<link rel="stylesheet" href="style.css">
+<script src="catalog.js" defer></script>
+<script src="viewer.js" defer></script>
+
+
+<script src="app.js" defer></script>
+</head>
+<body data-stage="home">
+<a class="skip" href="#screen">К содержанию</a>
+<!-- В шапке показаны этапы. В слепую дуэль посетитель попадает после анкеты. -->
+<header class="shell">
+<a href="./" class="brand"><span class="brand-icon" aria-hidden="true"></span>Auto<span>Choice</span></a>
+<nav aria-label="Этапы подбора">
+<ol><li data-nav="quiz">Анкета</li><li data-nav="duel">Слепая дуэль</li><li data-nav="results">Результат</li></ol>
+</nav>
+</header>
+<!-- Здесь app.js последовательно показывает главную, анкету, дуэль и результат. -->
+<main id="screen" class="shell">
+<section class="hero">
+<div class="hero-copy">
+<p class="kicker">Подбор автомобиля</p>
+<h1>Найди свою<br><em>машину.</em></h1>
+<p class="intro">Ответь на восемь вопросов, чтобы выбрать до пяти участников дуэли. Затем отвечай на вопросы слепой дуэли и узнай, какая машина лучше подходит тебе по задачам и по вкусу.</p>
+<div class="actions"><button type="button" class="primary" id="start">Начать подбор</button><span class="time">Около 3 минут</span></div>
+</div>
+</section>
+</main>
+<footer class="shell"><span>AutoChoice</span><span>Демонстрационная версия</span></footer>
+</body>
+</html>
